@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>numbbook</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+  <style>
+    body {
+      background-color: #000;
+      color: #ddd;
+    }
+    h1, h2 {
+      color: #f00;
+    }
+    a, button, input[type="submit"] {
+      background-color: #0044cc;
+      color: #fff;
+    }
+    nav a {
+      color: #66aaff;
+    }
+    figure img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    audio {
+      width: 100%;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <nav class="container-fluid">
+    <ul>
+      <li><strong>numbbook</strong></li>
+    </ul>
+    <ul>
+      <li><a href="#opis">Djelo</a></li>
+      <li><a href="#autor">Autor</a></li>
+      <li><a href="#kontakt" role="button">Kontakt</a></li>
+    </ul>
+  </nav>
+  <main class="container">
+    <div class="grid">
+      <section id="opis">
+        <hgroup>
+          <h2>numb (ili "proces počinje")</h2>
+          <h3>Autobiografsko književno djelo</h3>
+        </hgroup>
+        <p>"numb" je autobiografsko, sirovo i brutalno iskreno književno djelo koje razdire iluzije i izlaže stvarnost bez filtera. Intimna ispovijest ispričana kroz tamu, bez uljepšavanja.</p>
+        <figure>
+          <img src="img/naslovnica.jpg" alt="Naslovna stranica knjige numb" />
+          <figcaption>Naslovnica knjige: <em>NUMB – directed by fate</em></figcaption>
+        </figure>
+        <h3>Struktura</h3>
+        <p>Djelo je pisano u fragmentima, bez stroge naracije – čitatelja uvlači u autentičnu atmosferu autorove unutarnje borbe.</p>
+        <h3>Teme</h3>
+        <p>Ovisnost, psihičko stanje, neprihvaćenost, traženje identiteta – bez cenzure.</p>
+      </section>
+      <section id="autor">
+        <hgroup>
+          <h2>O autoru</h2>
+          <h3>S margine društva</h3>
+        </hgroup>
+        <p>Autor nije školovani pisac. Dolazi s margine društva, s adresama koje se češće brišu nego pamte. Iskrenost i bol pretočeni su u riječi koje ne traže sućut – samo razumijevanje.</p>
+        <figure>
+          <img src="img/autor.jpg" alt="Fotografija autora" />
+          <figcaption>Fotografija autora</figcaption>
+        </figure>
+      </section>
+      <section id="audio">
+        <hgroup>
+          <h2>Audio knjige</h2>
+          <h3>Preslušaj odabrana poglavlja</h3>
+        </hgroup>
+        <p>Ispod možeš slušati ulomke iz knjige. Samo ti imaš mogućnost uploadanja datoteka lokalno u direktorij.</p>
+        <audio controls>
+          <source src="audio/uvod.mp3" type="audio/mpeg">
+          Tvoj preglednik ne podržava audio element.
+        </audio>
+      </section>
+      <section id="kontakt">
+        <hgroup>
+          <h2>Kontakt</h2>
+          <h3>Javi mi se direktno</h3>
+        </hgroup>
+        <form class="grid">
+          <input type="text" id="firstname" name="firstname" placeholder="Tvoje ime" aria-label="Ime" required />
+          <input type="email" id="email" name="email" placeholder="Tvoj email" aria-label="Email" required />
+          <textarea name="message" id="message" rows="4" placeholder="Poruka..." aria-label="Poruka" required></textarea>
+          <a href="mailto:igorsajnovic2@gmail.com?subject=Kontakt%20-%20numbbook" class="contrast" role="button">Pošalji poruku</a>
+        </form>
+      </section>
+    </div>
+  </main>
+  <section aria-label="Dijeljenje">
+    <div class="container">
+      <article>
+        <hgroup>
+          <h2>Podijeli numbbook</h2>
+          <h3>Na društvenim mrežama</h3>
+        </hgroup>
+        <div class="grid">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://example.com" target="_blank" role="button">Facebook</a>
+          <a href="https://twitter.com/intent/tweet?url=https://example.com&text=Provjeri%20numbbook" target="_blank" role="button">X (Twitter)</a>
+          <a href="https://api.whatsapp.com/send?text=https://example.com" target="_blank" role="button">WhatsApp</a>
+        </div>
+      </article>
+    </div>
+  </section>
+  <footer class="container">
+    <small><a href="#">© 2025 Igor Šajnović</a> • <a href="#kontakt">Kontakt</a></small>
+  </footer>
+</body>
+</html>
